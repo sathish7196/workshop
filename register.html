@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Heroic Features - Register / login</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+
+<!--Jquery Tab-->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!--Jquery Tab-->
+
+
+</head>
+<body>
+
+<style type="text/css">
+   body{margin:0;padding:0;}
+  .resgiterSection{background:#e6e6e6;padding:100px 0px;height:100vh;}
+  .regOuterBox{max-width:500px;margin:0 auto 50px;min-height:400px;background:#f7f7f7;border-radius:10px;box-shadow:0px 0px 10px rgba(0,0,0,.1);padding:30px;}
+
+  /*Tab Style*/
+  .ui-widget.ui-widget-content{border:none;background:transparent;}
+  .ui-widget-header{background:transparent;border:none;padding:0;margin:0;}
+  .ui-tabs .ui-tabs-nav{text-align: center;}
+  .ui-tabs .ui-tabs-nav li{float:none;display: inline-block;border:none;border-radius:0px;margin:0;}
+
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor{padding:10px 70px;margin:0 !important;transition: all 0.5s ease;background:#e6e6e6;border-color:#e6e6e6 ;}
+
+   .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+   {
+     background:#e6e6e6 !important;border-color:#e6e6e6 !important;color:#fff !important;
+   }
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{background:#67b930 !important;border-color:#67b930 !important;}
+   
+  .ui-widget-content .ui-state-active .ui-tabs-anchor{background:#67b930 !important;border-color:#67b930 !important;color:#fff !important;}
+  /*Tab Style*/
+
+
+  /*Form Style*/
+  .tabForm{max-width:500px;margin:30px auto;padding:0 30px;}
+  .tabForm h4{text-align: center;margin-bottom:40px;}
+  .submitButton{background:#67b930;border:#67b930;color:#fff;border-radius:5px;padding:10px 30px;text-align: center;outline:none;transition:all 0.5s ease;}
+  .submitButton:hover{transform:translateY(-5px);}
+
+
+label.error {font-size: 11px;position: absolute;top: -28px;right: -15px;z-index: 9;height: 25px;line-height: 25px;
+    background-color: #a94442; color: #fff;font-weight: 600; padding: 0 6px;}
+label.error:after {content: '';position: absolute;border-style: solid;border-width: 0 6px 6px 0;border-color: transparent #a94442; display: block;width: 0;z-index: 1;bottom: -6px;left: 20%;}
+.form-group {position: relative;}
+  /*Form Style*/
+
+</style>
+
+
+  <!--Register Section Begin-->
+  <section class="resgiterSection">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="regOuterBox">
+            <form class="signupForm tabForm" id="signupForm" method="post">
+                 <h4>Sign Up For Free</h4>
+                 <div class="row">
+                   <div class="col-md-6">
+                     <div class="form-group">
+                       <input type="text" name="r_fname" id="r_fname" class="form-control" placeholder="Enter First Name">
+                     </div>
+                   </div>
+                   <div class="col-md-6">
+                     <div class="form-group">
+                       <input type="text" name="r_lname" id="r_lname" class="form-control" placeholder="Enter Last Name">
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="form-group">
+                       <input type="email" name="r_email" id="r_email" class="form-control" placeholder="Enter Email Address">
+                 </div>
+                 <div class="form-group">
+                    <input type="password" name="r_pass" id="r_pass" class="form-control" placeholder="Enter Password">
+                 </div>
+
+                 <div class="form-group text-center">
+                   <button type="button" class="submitButton">Submit</button>
+                 </div>
+              </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+         <div class="regOuterBox"> 
+          <form class="loginForm tabForm" id="loginForm" method="post">
+                 <h4>Login Here</h4>                 
+                 <div class="form-group">
+                       <input type="text" name="l_username" id="l_username" class="form-control" placeholder="Enter Username">
+                 </div>
+                 <div class="form-group">
+                    <input type="password" name="l_pass" id="l_pass" class="form-control" placeholder="Enter Password">
+                 </div>
+                 <div class="form-group text-center">
+                   <button type="button" class="submitButton">Submit</button>
+                 </div>
+            </form>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Register Section Begin-->
+
+</body>
+
+</html>
